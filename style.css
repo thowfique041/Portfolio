@@ -1729,3 +1729,54 @@ button:focus-visible {
         row-gap: 0
     }
 }
+
+/* ===== 3D background ===== */
+.bg3d {
+    height: 100vh;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: opacity 1.2s ease;
+    width: 100vw;
+    z-index: -2
+}
+
+.has-bg3d .bg3d {
+    opacity: 1
+}
+
+/* glass surfaces so the scene glows through without hurting readability */
+.has-bg3d .hero-visual,
+.has-bg3d .skill-card,
+.has-bg3d .project-card,
+.has-bg3d .featured-project,
+.has-bg3d .timeline-item,
+.has-bg3d .education-panel,
+.has-bg3d .hero-stats {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: #0d1118a8
+}
+
+.has-bg3d .skill-card-accent {
+    background: linear-gradient(145deg, #102019b0, #0d1118a8)
+}
+
+.has-bg3d .project-graphic {
+    background-color: #0a0e1566
+}
+
+.has-bg3d .section-muted {
+    background: #ffffff03
+}
+
+.has-bg3d .research-item,
+.has-bg3d .about-copy,
+.has-bg3d .contact-inner {
+    text-shadow: 0 1px 12px #080b10
+}
+
+.has-bg3d .hero-visual {
+    background: linear-gradient(145deg, #11172280, #0a0e1566)
+}
