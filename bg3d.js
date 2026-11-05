@@ -17,7 +17,11 @@ try {
 renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.25 : 1.6));
 renderer.setClearColor(0x000000, 0);
 
-const BG = 0x080b10, TEAL = new THREE.Color(0x64f4c4), BLUE = new THREE.Color(0x63a7ff), VIOLET = new THREE.Color(0x9b8cff);
+// Colours come from the CSS palette so the scene always matches the page.
+const css = getComputedStyle(document.documentElement);
+const cssColor = (name, fallback) => new THREE.Color((css.getPropertyValue(name) || '').trim() || fallback);
+const BG = cssColor('--bg', '#080b10'), TEAL = cssColor('--accent', '#64f4c4'),
+  BLUE = cssColor('--blue', '#63a7ff'), VIOLET = cssColor('--violet', '#9b8cff');
 const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(BG, 0.02);
 const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 200);
@@ -53,7 +57,7 @@ const particles = new THREE.Points(pGeo, new THREE.PointsMaterial({
 scene.add(particles);
 
 /* ---------- perspective grid floor ---------- */
-const grid = new THREE.GridHelper(80, 60, 0x1e6f5c, 0x15202c);
+const grid = new THREE.GridHelper(80, 60, TEAL.clone().lerp(BG, 0.65), BLUE.clone().lerp(BG, 0.85));
 grid.position.set(0, -7, -DEPTH / 2);
 grid.scale.z = (DEPTH + 40) / 80;
 grid.material.transparent = true; grid.material.opacity = 0.6;
