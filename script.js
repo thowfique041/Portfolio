@@ -6,3 +6,5 @@ window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>
 const items=document.querySelectorAll('.reveal'),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(reduced||!('IntersectionObserver' in window))items.forEach(item=>item.classList.add('visible'));else{const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});items.forEach(item=>observer.observe(item))}
 document.querySelector('[data-year]').textContent=new Date().getFullYear();
+const chips=document.querySelectorAll('[data-filter]'),cards=document.querySelectorAll('#projects [data-category]');
+chips.forEach(chip=>chip.addEventListener('click',()=>{const f=chip.dataset.filter;chips.forEach(c=>{const on=c===chip;c.classList.toggle('active',on);c.setAttribute('aria-pressed',String(on))});cards.forEach(card=>{const show=f==='all'||card.dataset.category.split(' ').includes(f);card.classList.toggle('is-hidden',!show);if(show)card.classList.add('visible')})}));

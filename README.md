@@ -1,6 +1,6 @@
 # Thowfiqur Bari Chowdhury — Portfolio
 
-A personal portfolio showcasing my work and interests in AI/ML, Deep Learning, Generative AI, Agentic AI, RAG, NLP, Computer Vision, and AI research.
+A personal portfolio presenting me as a **Full-Stack Developer** — building production web apps with React, Next.js, TypeScript, Node.js, NestJS, FastAPI, PostgreSQL, and MongoDB — alongside my work in AI/ML, Deep Learning, Generative AI, Agentic AI, RAG, NLP, Computer Vision, and AI research.
 
 ## 🌐 Live Portfolio
 
@@ -8,15 +8,37 @@ A personal portfolio showcasing my work and interests in AI/ML, Deep Learning, G
 
 The website is hosted using GitHub Pages.
 
+## Experience
+
+- **Software Engineer — TrustCart** (Dec 2025 – Present) · Backend & Platform Engineering. Backend of a multi-tenant retail ERP serving six storefronts from one shared platform: schema migrations, REST APIs, authentication, background jobs, realtime workflows, deployment, backups, and production operations (NestJS, PostgreSQL, Redis/Bull, Socket.IO, Next.js).
+- **Software / AI Engineer — DataFlow AI Labs** (Jan 2024 – Jan 2025).
+
 ## About
 
-I am a final-year Computer Science & Engineering student focused on building and studying AI systems. My interests span AI/ML, Deep Learning, Generative AI, Agentic AI, Retrieval-Augmented Generation, NLP, Computer Vision, and applied AI research.
+I am a software engineer and final-year Computer Science & Engineering student focused on building and studying AI systems. My interests span AI/ML, Deep Learning, Generative AI, Agentic AI, Retrieval-Augmented Generation, NLP, Computer Vision, and applied AI research.
 
 ## Technical Focus
+
+### Frontend
+
+- React, Next.js, TypeScript, JavaScript
+- Tailwind CSS, Redux Toolkit, Vite
+
+### Backend & APIs
+
+- Node.js, NestJS, Express, FastAPI
+- REST APIs, JWT / role-based access, Socket.IO, Zod / Pydantic
+
+### Databases & DevOps
+
+- PostgreSQL, MongoDB, Redis / Bull, SQL
+- Docker, Git, Linux, Vercel, Render, MongoDB Atlas, Cloudinary
 
 ### Programming
 
 - Python
+- JavaScript / TypeScript
+- SQL
 - C
 - C++
 - Java
@@ -50,6 +72,30 @@ I am a final-year Computer Science & Engineering student focused on building and
 - Hybrid Search and BM25
 
 ## Featured Projects
+
+### Full-Stack
+
+#### [HalkaBite](https://github.com/thowfique041/HalkaBite)
+
+Role-based food delivery platform for customers, restaurants, delivery partners, and admins — React 19, TypeScript, Redux Toolkit, Express 5, MongoDB, JWT, server-sent events, Leaflet/OpenStreetMap, and Gemini-assisted, database-grounded recommendations.
+
+#### [Tripti Food](https://github.com/thowfique041/tripti-food)
+
+Mobile-first Bangla e-commerce store (React + TypeScript + Express + MongoDB) with cart, COD/bKash/Nagad checkout, admin dashboard, and server-side price and stock validation.
+
+#### [LateGenues](https://github.com/thowfique041/lategenues)
+
+TypeScript MERN coaching and online-learning platform with Admin, Teacher, Student, and Guardian dashboards, timed exams, analytics, and Socket.IO.
+
+#### [DentalFlow — Dental Clinic AI CRM](https://github.com/thowfique041/dental-clinic-ai-crm)
+
+Next.js 15 + Express 5 + MongoDB CRM for the dental patient journey with role-based access and LLM lead analysis.
+
+#### [PagePilot](https://github.com/thowfique041/facebook-page-automation-demo)
+
+Interactive frontend demo of a Facebook Page automation workspace — dashboard, inbox, orders, rules, and safety controls.
+
+### AI / ML
 
 ### [NexusRAG](https://github.com/thowfique041/nexasRag)
 
@@ -86,8 +132,10 @@ These are research interests; no publication claims are made.
 
 ## Portfolio Features
 
-- Responsive, dark-themed AI/ML presentation
-- Prominent featured-project showcase led by NexusRAG
+- Responsive, dark-themed full-stack + AI/ML presentation
+- Experience timeline
+- Project filter (All / Full-stack / AI-ML) with featured HalkaBite and NexusRAG showcases
+- Grouped full-stack and AI/ML capability cards
 - Technical focus, research interests, and education sections
 - Mobile navigation and subtle UI interactions
 - GitHub, LinkedIn, Kaggle, and email links
@@ -108,11 +156,7 @@ No npm installation or build step is currently required.
 
 ## CV
 
-The CV is not currently included. Add it at:
-
-```text
-public/Thowfiqur_CV.pdf
-```
+The downloadable CV lives at `public/Thowfiqur_CV.pdf`.
 
 ## Project Structure
 
@@ -124,7 +168,8 @@ Portfolio/
 ├── favicon.svg
 ├── images.png
 ├── public/
-│   └── .gitkeep
+│   ├── .gitkeep
+│   └── Thowfiqur_CV.pdf
 └── README.md
 ```
 
