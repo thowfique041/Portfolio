@@ -1783,3 +1783,11 @@ button:focus-visible {
 .has-bg3d .hero-visual {
     background: linear-gradient(145deg, color-mix(in srgb, var(--surface2) 50%, transparent), color-mix(in srgb, var(--bg) 40%, transparent))
 }
+
+/* On desktop the live 3D architecture takes the place of the static hero card
+   (the card stays as the fallback when WebGL isn't available, and on mobile). */
+@media(min-width:901px) {
+    .has-bg3d .hero-visual {
+        visibility: hidden
+    }
+}
