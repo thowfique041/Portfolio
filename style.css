@@ -124,10 +124,12 @@ ul {
     border-radius: 8px;
     color: var(--on-accent);
     display: inline-flex;
-    font: 11px "DM Mono";
+    font: 600 10px "DM Mono";
     height: 31px;
     justify-content: center;
-    width: 31px
+    letter-spacing: .04em;
+    min-width: 31px;
+    padding: 0 7px
 }
 
 .brand-dot,
