@@ -136,7 +136,7 @@ const glowTex = (() => { const c = mkCanvas(64, 64), g = c.getContext('2d'), grd
   const arch = new THREE.Group();
   // Browser window with a mini dashboard UI
   const browser = panel(3.2, 2.1, 640, 420, (g, c) => {
-    chrome(g, c, 'app.yoursite.com');
+    chrome(g, c, 'localhost:3000/dashboard');
     g.fillStyle = HEX.a1 + '55'; rr(g, 30, 90, 150, 300, 14); g.fill();
     for (let i = 0; i < 3; i++) { g.fillStyle = HEX.text + '14'; rr(g, 200 + i * 138, 90, 124, 90, 12); g.fill(); }
     g.fillStyle = HEX.text + '10'; rr(g, 200, 200, 410, 190, 12); g.fill();

@@ -8,3 +8,5 @@ if(reduced||!('IntersectionObserver' in window))items.forEach(item=>item.classLi
 document.querySelector('[data-year]').textContent=new Date().getFullYear();
 const chips=document.querySelectorAll('[data-filter]'),cards=document.querySelectorAll('#projects [data-category]');
 chips.forEach(chip=>chip.addEventListener('click',()=>{const f=chip.dataset.filter;chips.forEach(c=>{const on=c===chip;c.classList.toggle('active',on);c.setAttribute('aria-pressed',String(on))});cards.forEach(card=>{const show=f==='all'||card.dataset.category.split(' ').includes(f);card.classList.toggle('is-hidden',!show);if(show)card.classList.add('visible')})}));
+const webgl=(()=>{try{const c=document.createElement('canvas');return!!(window.WebGLRenderingContext&&(c.getContext('webgl2')||c.getContext('webgl')))}catch(e){return false}})();
+if(webgl&&document.querySelector('[data-bg3d]'))import('./bg3d.js').catch(()=>document.querySelector('[data-bg3d]')?.remove());else document.querySelector('[data-bg3d]')?.remove();

@@ -340,7 +340,7 @@ button:focus-visible {
 }
 
 .visual-header>span {
-    background: #39404b;
+    background: color-mix(in srgb, var(--muted) 30%, var(--surface));
     border-radius: 50%;
     height: 7px;
     width: 7px
@@ -351,8 +351,8 @@ button:focus-visible {
 }
 
 .visual-header p {
-    color: #647082;
-    font: 9px "DM Mono";
+    color: var(--muted);
+    font: 10px "DM Mono";
     margin-left: 9px
 }
 
@@ -413,7 +413,7 @@ button:focus-visible {
 .vector-core small,
 .output-card small {
     color: var(--muted);
-    font: 7px "DM Mono"
+    font: 9px "DM Mono"
 }
 
 .data-node {
@@ -421,9 +421,9 @@ button:focus-visible {
     background: var(--surface2);
     border: 1px solid var(--line);
     border-radius: 8px;
-    color: #bcc5d0;
+    color: color-mix(in srgb, var(--text) 60%, var(--muted));
     display: flex;
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     gap: 8px;
     padding: 8px 11px;
     position: absolute
@@ -431,7 +431,7 @@ button:focus-visible {
 
 .data-node span {
     color: var(--accent);
-    font-size: 7px
+    font-size: 9px
 }
 
 .node-a {
@@ -457,9 +457,9 @@ button:focus-visible {
 .visual-footer {
     align-items: center;
     border-top: 1px solid var(--line);
-    color: #687687;
+    color: var(--muted);
     display: flex;
-    font: 8px "DM Mono";
+    font: 10px "DM Mono";
     height: 53px;
     justify-content: space-between;
     padding: 0 18px
@@ -513,7 +513,7 @@ button:focus-visible {
 }
 
 .about-copy>p {
-    color: #b3bdc9;
+    color: color-mix(in srgb, var(--text) 50%, var(--muted));
     font-size: 17px;
     margin-bottom: 22px
 }
@@ -544,7 +544,7 @@ button:focus-visible {
 
 .education-card span {
     color: var(--muted);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     text-transform: uppercase
 }
 
@@ -581,7 +581,7 @@ button:focus-visible {
 
 .skill-number,
 .project-index {
-    color: #515e6f;
+    color: color-mix(in srgb, var(--muted) 80%, var(--bg));
     font: 10px "DM Mono"
 }
 
@@ -609,8 +609,8 @@ button:focus-visible {
     background: #ffffff09;
     border: 1px solid var(--line);
     border-radius: 6px;
-    color: #9eabb9;
-    font: 9px "DM Mono";
+    color: color-mix(in srgb, var(--text) 25%, var(--muted));
+    font: 10px "DM Mono";
     padding: 5px 8px
 }
 
@@ -643,7 +643,7 @@ button:focus-visible {
 }
 
 .document span {
-    background: #35404f;
+    background: color-mix(in srgb, var(--muted) 30%, var(--surface));
     display: block;
     height: 3px;
     margin-bottom: 10px
@@ -656,7 +656,7 @@ button:focus-visible {
 .document b {
     bottom: 11px;
     color: var(--accent);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     position: absolute
 }
 
@@ -728,7 +728,7 @@ button:focus-visible {
     align-items: center;
     color: var(--muted);
     display: flex;
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     gap: 12px;
     text-transform: uppercase
 }
@@ -786,7 +786,7 @@ button:focus-visible {
 
 .project-type {
     color: var(--blue);
-    font: 8px "DM Mono";
+    font: 10px "DM Mono";
     text-transform: uppercase
 }
 
@@ -950,7 +950,7 @@ button:focus-visible {
 
 .footer-grid>div>p {
     color: var(--muted);
-    font: 8px "DM Mono";
+    font: 10px "DM Mono";
     margin: 8px 0 0 41px
 }
 
@@ -964,8 +964,8 @@ button:focus-visible {
 }
 
 .copyright {
-    color: #5f6a78;
-    font: 8px "DM Mono"
+    color: var(--muted);
+    font: 10px "DM Mono"
 }
 
 .reveal {
@@ -1201,7 +1201,7 @@ button:focus-visible {
     border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
     border-radius: 999px;
     color: color-mix(in srgb, var(--accent) 40%, var(--text));
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     padding: 5px 9px
 }
 
@@ -1229,15 +1229,15 @@ button:focus-visible {
 }
 
 .project-story b {
-    color: #cbd5df;
-    font: 500 9px "DM Mono";
+    color: color-mix(in srgb, var(--text) 80%, var(--muted));
+    font: 500 10px "DM Mono";
     letter-spacing: .07em;
     margin-right: 5px;
     text-transform: uppercase
 }
 
 .hero-headline {
-    color: #cad3dd;
+    color: color-mix(in srgb, var(--text) 80%, var(--muted));
     font: 600 clamp(1.35rem, 2.4vw, 2rem)/1.3 Syne;
     letter-spacing: -.025em;
     margin: -10px 0 16px;
@@ -1269,7 +1269,7 @@ button:focus-visible {
 .education-label,
 .education-status {
     color: var(--accent);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     letter-spacing: .08em;
     text-transform: uppercase
 }
@@ -1351,13 +1351,13 @@ button:focus-visible {
 
 .hero-stats dt {
     color: var(--accent);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     letter-spacing: .08em;
     text-transform: uppercase
 }
 
 .hero-stats dd {
-    color: #d5dde6;
+    color: color-mix(in srgb, var(--text) 90%, var(--muted));
     font-size: 13px;
     font-weight: 600;
     margin-top: 4px
@@ -1419,7 +1419,7 @@ button:focus-visible {
     border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
     border-radius: 20px;
     color: var(--accent);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     padding: 3px 8px;
     text-transform: uppercase
 }
@@ -1439,7 +1439,7 @@ button:focus-visible {
 }
 
 .timeline-points {
-    color: #b8c3cf;
+    color: color-mix(in srgb, var(--text) 55%, var(--muted));
     display: grid;
     font-size: 13px;
     gap: 6px;
@@ -1554,7 +1554,7 @@ button:focus-visible {
 }
 
 .app-bar i {
-    background: #2b3442;
+    background: color-mix(in srgb, var(--muted) 22%, var(--surface));
     border-radius: 50%;
     height: 7px;
     width: 7px
@@ -1566,7 +1566,7 @@ button:focus-visible {
 
 .app-bar span {
     color: var(--muted);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     margin-left: auto
 }
 
@@ -1647,7 +1647,7 @@ button:focus-visible {
     border: 1px solid color-mix(in srgb, var(--blue) 33%, transparent);
     border-radius: 999px;
     color: var(--blue);
-    font: 9px "DM Mono";
+    font: 10px "DM Mono";
     padding: 5px 10px;
     text-transform: uppercase
 }
