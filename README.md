@@ -137,6 +137,8 @@ These are research interests; no publication claims are made.
 - Project filter (All / Full-stack / AI-ML) with featured HalkaBite and NexusRAG showcases
 - Grouped full-stack and AI/ML capability cards
 - Technical focus, research interests, and education sections
+- Scroll-driven, development-themed 3D background (system architecture, live code editor, deploy terminal, git graph, tech-stack orbit) with WebGL and reduced-motion fallbacks
+- Sunset Neon colour palette driven by CSS variables
 - Mobile navigation and subtle UI interactions
 - GitHub, LinkedIn, Kaggle, and email links
 - CV download path prepared for a real PDF
@@ -165,6 +167,7 @@ Portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
+├── bg3d.js          # development-themed 3D background (Three.js via CDN)
 ├── favicon.svg
 ├── images.png
 ├── public/
