@@ -302,7 +302,7 @@
             <h2 id="projects-title">Projects</h2>
           </header>
           <div class="section-body">
-            <p class="lead reveal">Two projects written up properly, and a list of the rest.</p>
+            <p class="lead reveal">Three projects written up properly, and a list of the rest.</p>
             <div class="filter-row reveal">
               <div class="project-filter" role="group" aria-label="Filter projects">
                 <button type="button" class="filter-tab" data-filter="all" aria-pressed="true">All <sup>10</sup></button>
@@ -383,6 +383,42 @@
               <a class="link-arrow" href="https://github.com/thowfique041/nexasRag" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a>
             </div>
           </article>
+
+          <!-- ===== Case study: Tripti Food ===== -->
+          <article class="case reveal" data-category="fullstack">
+            <header class="case-head">
+              <h3>Tripti Food</h3>
+              <p class="case-type">Bangla online store, full-stack</p>
+            </header>
+            <figure class="case-media">
+              <img class="shot" src="assets/screenshots/tripti-food-1600.webp"
+                srcset="assets/screenshots/tripti-food-800.webp 800w, assets/screenshots/tripti-food-1600.webp 1600w"
+                sizes="(max-width: 900px) 92vw, 680px" width="1600" height="833" loading="lazy" decoding="async"
+                alt="Tripti Food home page in Bengali: a dark green delivery banner, the headline “প্রকৃতির ভালোটা, প্রতিদিনের তৃপ্তিতে” with buttons to browse products or order on WhatsApp, and a photo carousel of a jar of honey with nuts and dates.">
+            </figure>
+            <div class="case-body">
+              <p class="case-why">A small shop selling honey, dates, nuts and seeds needed a site in Bengali that works
+                on a phone, takes the payment methods people here actually use, and doesn’t trust the price the browser
+                sends.</p>
+              <h4>What I built</h4>
+              <p>A mobile-first storefront in React and TypeScript, with an Express and MongoDB API behind it. Customers
+                can pay cash on delivery, with bKash or Nagad, or fall back to ordering on WhatsApp. When an order comes
+                in, the server recalculates prices, the delivery fee, and stock instead of using what the cart says.</p>
+              <p>Nobody needs an account to follow an order. You enter the order number and the phone number you
+                ordered with, and you see its status, the courier’s tracking ID if there is one, and a button to order
+                the same items again. Reviews open only after an order is marked delivered, and the shop owner
+                moderates them.</p>
+              <p>The admin side handles products (with images uploaded to Cloudinary), store settings, and order
+                status. Admin passwords are stored only as bcrypt hashes, and the API runs behind Helmet, strict CORS,
+                and rate limits.</p>
+              <!-- TODO (Tripti Food): add these three sections when ready, each as <h4>…</h4><p>…</p>
+                   1. A technical challenge: one real problem I hit.
+                   2. How I solved it: what I tried and what finally worked.
+                   3. What I’d do differently: one thing I would change if I started again. -->
+              <p class="stack">Stack: React, TypeScript, Vite, Express, MongoDB, JWT, bcrypt, Cloudinary, Helmet</p>
+              <a class="link-arrow" href="https://github.com/thowfique041/tripti-food" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
 
         <h3 class="list-title reveal">More projects</h3>
@@ -400,14 +436,6 @@
               <span class="ir-title">DentalFlow</span>
               <span class="ir-desc">CRM for a dental clinic on Next.js 15 and Express 5. It covers leads, appointments with
                 conflict checks, treatments, follow-ups, and reviews, and uses Gemini to analyse new leads.</span>
-              <span class="ir-arrow" aria-hidden="true">↗</span>
-            </a>
-          </li>
-          <li class="index-row reveal" data-category="fullstack">
-            <a href="https://github.com/thowfique041/tripti-food" target="_blank" rel="noopener noreferrer">
-              <span class="ir-title">Tripti Food</span>
-              <span class="ir-desc">Bangla e-commerce store with cash on delivery, bKash, and Nagad checkout, a WhatsApp
-                fallback, and prices and stock re-checked on the server.</span>
               <span class="ir-arrow" aria-hidden="true">↗</span>
             </a>
           </li>
