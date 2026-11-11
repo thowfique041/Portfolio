@@ -1655,3 +1655,9 @@ html.reveal-ready .reveal.is-visible {
 .case-body p + p {
   margin-top: var(--s-3);
 }
+
+.source-note {
+  color: var(--muted) !important;
+  font-size: var(--fs-sm) !important;
+  margin-top: var(--s-3);
+}
