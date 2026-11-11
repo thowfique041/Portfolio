@@ -1578,6 +1578,10 @@ html.has-bg3d .orb-c {
   font-family: var(--font-body);
 }
 
+.screen-img-halka {
+  aspect-ratio: 1600 / 805 !important;
+}
+
 .screen-img {
   width: 100%;
   aspect-ratio: 1200 / 824;
