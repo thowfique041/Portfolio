@@ -36,7 +36,7 @@ Portfolio/
 ├── assets/
 │   ├── og-image.png           # social preview 1200×630
 │   ├── apple-touch-icon.png
-│   └── screenshots/           # project screenshots (placeholders for now)
+│   └── screenshots/           # project screenshots (HalkaBite real, NexusRAG placeholder)
 └── public/
     └── Thowfiqur_CV.pdf       # served by every "Download CV" button
 ```
@@ -46,7 +46,7 @@ All paths are relative, so the site works under the GitHub Pages sub-path `/Port
 ## Customising
 
 - **Profile photo:** add `assets/me.jpg` (portrait, about 800×1000) and set `data-photo="assets/me.jpg"` on the `.hero-photo` element in `index.html`. It appears above the “Now” list; the slot stays hidden until then.
-- **Project screenshots:** replace `assets/screenshots/halkabite.png` and `assets/screenshots/nexusrag.png` (currently labelled placeholders) with real screenshots, then update each image’s `alt` text. Paths are relative on purpose: a leading `/` would break under the `/Portfolio/` sub-path.
+- **Project screenshots:** HalkaBite uses a real screenshot (`assets/screenshots/halkabite-1600.webp` / `-800.webp`). Replace `assets/screenshots/nexusrag.png` (a labelled placeholder) with a real one and update its `alt` text. Paths are relative on purpose: a leading `/` would break under the `/Portfolio/` sub-path.
 - **TODOs:** search `index.html` for `TODO`. Visible TODO boxes are styled with an orange dashed border so they can’t be missed before deploying.
 - **CV:** replace `public/Thowfiqur_CV.pdf` (keep the file name).
 - **Colours & type:** edit the tokens at the top of `style.css`.

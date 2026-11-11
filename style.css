@@ -1049,13 +1049,11 @@ html.js .hero-foot {
 }
 
 .shot {
-  aspect-ratio: 16 / 10;
   background: var(--surface);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  object-fit: cover;
-  object-position: top left;
+  height: auto;
   width: 100%;
 }
 
