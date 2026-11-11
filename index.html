@@ -238,8 +238,8 @@
               <p class="xp-date">Jan 2024 to Jan 2025</p>
               <div class="xp-body">
                 <h3>Software / AI engineer at DataFlow AI Labs</h3>
-                <p class="todo"><span>TODO</span> What I actually built at DataFlow AI Labs, the tools I used, and the
-                  outcome. Replace this line with one or two sentences.</p>
+                <!-- TODO: what I built there (DataFlow AI Labs): what I built, the tools I used, and the outcome.
+                     Add it as <p class="xp-sub">…</p> or a <ul class="dash-list">. -->
               </div>
             </li>
           </ol>
@@ -338,13 +338,10 @@
                 review analytics. Riders handle assigned deliveries and their earnings. Order and chat updates arrive
                 over server-sent events, so the React client never polls. Food suggestions come from Gemini, but only
                 from dishes that already exist in MongoDB.</p>
-              <h4>A technical challenge</h4>
-              <p class="todo"><span>TODO</span> One real problem I hit while building HalkaBite (for example a bug, a
-                design decision, or a performance issue).</p>
-              <h4>How I solved it</h4>
-              <p class="todo"><span>TODO</span> What I tried and what finally worked.</p>
-              <h4>What I’d do differently</h4>
-              <p class="todo"><span>TODO</span> One thing I would change if I started again.</p>
+              <!-- TODO (HalkaBite): add these three sections when ready, each as <h4>…</h4><p>…</p>
+                   1. A technical challenge: one real problem I hit.
+                   2. How I solved it: what I tried and what finally worked.
+                   3. What I’d do differently: one thing I would change if I started again. -->
               <p class="stack">Stack: React 19, TypeScript, Redux Toolkit and RTK Query, Tailwind CSS, Express 5, MongoDB,
                 JWT, server-sent events, Leaflet, Gemini</p>
               <a class="link-arrow" href="https://github.com/thowfique041/HalkaBite" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a>
@@ -358,10 +355,14 @@
               <p class="case-type">Question answering over PDFs, RAG</p>
             </header>
             <figure class="case-media">
-              <!-- TODO (screenshot): replace assets/screenshots/nexusrag.png with a real screenshot or a short GIF
-                   (if you use .gif, change the src) and update the alt text. -->
-              <img class="shot" src="assets/screenshots/nexusrag.png" width="1600" height="1000" loading="lazy"
-                decoding="async" alt="Screenshot of NexusRAG (placeholder until the real screenshot is added)">
+              <!-- TODO: screenshot assets/screenshots/nexusrag.png
+                   When it exists, replace the .plain-card below with:
+                   <img class="shot" src="assets/screenshots/nexusrag.png" width="1600" height="1000" loading="lazy"
+                        decoding="async" alt="(describe what the screenshot shows)"> -->
+              <div class="plain-card">
+                <p class="plain-card-name">NexusRAG</p>
+                <p class="plain-card-stack">FastAPI, React, LangChain, ChromaDB, BM25, CrossEncoder, CLIP, Gemini</p>
+              </div>
             </figure>
             <div class="case-body">
               <p class="case-why">Plain vector search over PDFs misses exact keywords and drops the surrounding
@@ -373,12 +374,10 @@
                 ways, widened back to its parent passage, reranked with a CrossEncoder, and answered by Gemini with page
                 citations. Images (through CLIP) and tables have their own retrieval paths. If either one fails, the
                 text answer still comes back.</p>
-              <h4>A technical challenge</h4>
-              <p class="todo"><span>TODO</span> One real problem I hit while building NexusRAG.</p>
-              <h4>How I solved it</h4>
-              <p class="todo"><span>TODO</span> What I tried and what finally worked.</p>
-              <h4>What I’d do differently</h4>
-              <p class="todo"><span>TODO</span> One thing I would change if I started again.</p>
+              <!-- TODO (NexusRAG): add these three sections when ready, each as <h4>…</h4><p>…</p>
+                   1. A technical challenge: one real problem I hit.
+                   2. How I solved it: what I tried and what finally worked.
+                   3. What I’d do differently: one thing I would change if I started again. -->
               <p class="stack">Stack: Python, FastAPI, React, LangChain, ChromaDB, BM25, MiniLM, CrossEncoder, CLIP,
                 Gemini</p>
               <a class="link-arrow" href="https://github.com/thowfique041/nexasRag" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a>

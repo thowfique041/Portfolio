@@ -1627,3 +1627,27 @@ html.reveal-ready .reveal.is-visible {
   }
 }
 
+
+/* neutral stand-in until a real screenshot is added */
+.plain-card {
+  aspect-ratio: 16 / 10;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(20px, 3vw, 36px);
+}
+
+.plain-card-name {
+  font: 400 clamp(34px, 4vw, 56px)/1 var(--serif);
+  letter-spacing: -.02em;
+}
+
+.plain-card-stack {
+  color: var(--muted);
+  font: 400 var(--fs-sm)/1.6 var(--mono);
+  margin-top: var(--s-3);
+  max-width: 40ch;
+}
