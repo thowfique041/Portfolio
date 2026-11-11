@@ -299,12 +299,12 @@
             <h2 id="projects-title">Projects</h2>
           </header>
           <div class="section-body">
-            <p class="lead reveal">Three projects written up properly, and a list of the rest.</p>
+            <p class="lead reveal">Two projects written up properly, and a list of the rest.</p>
             <div class="filter-row reveal">
               <div class="project-filter" role="group" aria-label="Filter projects">
-                <button type="button" class="filter-tab" data-filter="all" aria-pressed="true">All <sup>8</sup></button>
-                <button type="button" class="filter-tab" data-filter="fullstack" aria-pressed="false">Full-stack <sup>6</sup></button>
-                <button type="button" class="filter-tab" data-filter="ai" aria-pressed="false">AI / ML <sup>4</sup></button>
+                <button type="button" class="filter-tab" data-filter="all" aria-pressed="true">All <sup>7</sup></button>
+                <button type="button" class="filter-tab" data-filter="fullstack" aria-pressed="false">Full-stack <sup>5</sup></button>
+                <button type="button" class="filter-tab" data-filter="ai" aria-pressed="false">AI / ML <sup>3</sup></button>
               </div>
               <a class="link-arrow" href="https://github.com/thowfique041?tab=repositories" target="_blank"
                 rel="noopener noreferrer">All repositories <span aria-hidden="true">↗</span></a>
@@ -341,42 +341,6 @@
                    3. What I’d do differently: one thing I would change if I started again. -->
               <p class="stack">Stack: React 19, TypeScript, Redux Toolkit and RTK Query, Tailwind CSS, Express 5, MongoDB,
                 JWT, server-sent events, Leaflet, Gemini</p>
-              <p class="source-note">The source code is private. I can walk you through it on request.</p>
-            </div>
-          </article>
-
-          <!-- ===== Case study: NexusRAG ===== -->
-          <article class="case reveal" data-category="ai fullstack">
-            <header class="case-head">
-              <h3>NexusRAG</h3>
-              <p class="case-type">Question answering over PDFs, RAG</p>
-            </header>
-            <figure class="case-media">
-              <!-- TODO: screenshot assets/screenshots/nexusrag.png
-                   When it exists, replace the .plain-card below with:
-                   <img class="shot" src="assets/screenshots/nexusrag.png" width="1600" height="1000" loading="lazy"
-                        decoding="async" alt="(describe what the screenshot shows)"> -->
-              <div class="plain-card">
-                <p class="plain-card-name">NexusRAG</p>
-                <p class="plain-card-stack">FastAPI, React, LangChain, ChromaDB, BM25, CrossEncoder, CLIP, Gemini</p>
-              </div>
-            </figure>
-            <div class="case-body">
-              <p class="case-why">Plain vector search over PDFs misses exact keywords and drops the surrounding
-                paragraph. It also ignores whatever sits in tables and images.</p>
-              <h4>What I built</h4>
-              <p>A local-first app for asking questions about a set of PDFs, with a FastAPI backend and a React front
-                end. Each document is split into parent and child chunks and indexed twice, as MiniLM vectors in Chroma
-                and in BM25. A question is rewritten using the chat history, expanded with MultiQuery, searched both
-                ways, widened back to its parent passage, reranked with a CrossEncoder, and answered by Gemini with page
-                citations. Images (through CLIP) and tables have their own retrieval paths. If either one fails, the
-                text answer still comes back.</p>
-              <!-- TODO (NexusRAG): add these three sections when ready, each as <h4>…</h4><p>…</p>
-                   1. A technical challenge: one real problem I hit.
-                   2. How I solved it: what I tried and what finally worked.
-                   3. What I’d do differently: one thing I would change if I started again. -->
-              <p class="stack">Stack: Python, FastAPI, React, LangChain, ChromaDB, BM25, MiniLM, CrossEncoder, CLIP,
-                Gemini</p>
               <p class="source-note">The source code is private. I can walk you through it on request.</p>
             </div>
           </article>
