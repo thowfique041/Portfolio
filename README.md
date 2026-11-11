@@ -13,7 +13,7 @@ An editorial, typography-led identity — no gradients, glow, glassmorphism or d
 
 - **Type:** Instrument Serif for display (name, section titles, project names), Inter for text, and JetBrains Mono for labels. One type scale and an 8 px spacing scale throughout.
 - **Colour:** dark theme in deep charcoal (`#0E1116`) with soft white text and a single electric-blue accent (`#5B9BFF`) used sparingly; a separately tuned light theme on warm paper (`#F4F1EA`) with deep charcoal text and a muted blue accent (`#2B5797`).
-- **Layout:** asymmetric hero (large serif name, role, headline, and an at-a-glance “Now” list), a 3 / 9 column section grid with hairline rules, two written-up case studies, and a one-line list for the other projects.
+- **Layout:** asymmetric hero (large serif name, role, headline, and an at-a-glance “Now” list), a 3 / 9 column section grid with hairline rules, written-up case studies, and a one-line list for the other projects.
 - **Interaction:** live local time in Sylhet (GMT+6) for remote collaborators, an active-section underline in the navigation, a thin reading-progress line, quiet one-time reveals, and hover states on links, rows and cards — all disabled under `prefers-reduced-motion`.
 
 ## Functionality
@@ -36,7 +36,7 @@ Portfolio/
 ├── assets/
 │   ├── og-image.png           # social preview 1200×630
 │   ├── apple-touch-icon.png
-│   └── screenshots/           # project screenshots (HalkaBite real, NexusRAG placeholder)
+│   └── screenshots/           # project screenshots (HalkaBite, Tripti Food)
 └── public/
     └── Thowfiqur_CV.pdf       # served by every "Download CV" button
 ```
@@ -46,7 +46,7 @@ All paths are relative, so the site works under the GitHub Pages sub-path `/Port
 ## Customising
 
 - **Profile photo:** add `assets/me.jpg` (portrait, about 800×1000) and set `data-photo="assets/me.jpg"` on the `.hero-photo` element in `index.html`. It appears above the “Now” list; the slot stays hidden until then.
-- **Project screenshots:** HalkaBite uses a real screenshot (`assets/screenshots/halkabite-1600.webp` / `-800.webp`). Replace `assets/screenshots/nexusrag.png` (a labelled placeholder) with a real one and update its `alt` text. Paths are relative on purpose: a leading `/` would break under the `/Portfolio/` sub-path.
+- **Project screenshots:** HalkaBite and Tripti Food use real screenshots in `assets/screenshots/` (800 and 1600 px WebP). To swap one, replace the files and update the `alt` text. Paths are relative on purpose: a leading `/` would break under the `/Portfolio/` sub-path.
 - **TODOs:** search `index.html` for `TODO`. Visible TODO boxes are styled with an orange dashed border so they can’t be missed before deploying.
 - **CV:** replace `public/Thowfiqur_CV.pdf` (keep the file name).
 - **Colours & type:** edit the tokens at the top of `style.css`.
