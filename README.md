@@ -7,22 +7,21 @@ Production web apps with React, Next.js, NestJS, Express, FastAPI, PostgreSQL an
 
 ![Portfolio preview](assets/og-image.png)
 
-## Highlights
+## Design
 
-- **Midnight Blue design system** — dark (default) and a dedicated light theme, toggled from the navigation, saved in `localStorage`, following the OS preference until the visitor chooses, and applied before first paint (no theme flash).
-- **Interactive 3D background** (`bg3d.js`, Three.js) — the camera glides through the page as you scroll, anchored to each section: lit geometric solids, a self-typing NestJS controller, a live system architecture with request packets, a tech-stack orbit, a deploy terminal and git graph, a neural network, and a globe.
-- **Hero** — identity, headline, three CTAs (Explore My Work / Download CV / Contact Me), floating tech badges, mouse-parallax portrait card and a scroll cue.
-- **Projects** — four featured case studies (HalkaBite, NexusRAG, LateGenues, DentalFlow) with problem, key features, architecture and stack; six more projects; All / Full-stack / AI-ML filters.
-- **Experience timeline**, four skill groups (no fake percentages), research interests kept separate from ongoing work and competitions, education card, contact section with copy-to-clipboard.
-- **Scroll animations** with GSAP + ScrollTrigger (section reveals, staggered cards, timeline fill, subtle media parallax, scroll-progress bar) — with an IntersectionObserver fallback.
+An editorial, typography-led identity — no gradients, glow, glassmorphism or decorative 3D.
 
-## Performance, accessibility & robustness
+- **Type:** Instrument Serif for display (name, section titles, project names), Inter for text, JetBrains Mono for labels. One type scale and an 8 px spacing scale throughout.
+- **Colour:** dark theme in deep charcoal (`#0E1116`) with soft white text and a single electric-blue accent (`#5B9BFF`) used sparingly; a separately tuned light theme on warm paper (`#F4F1EA`) with deep charcoal text and a muted blue accent (`#2B5797`).
+- **Layout:** asymmetric hero (large serif name, role, headline, and an at-a-glance “Now” list), a 3 / 9 column section grid with hairline rules, numbered case studies, and an index list for further projects.
+- **Interaction:** live local time in Sylhet (GMT+6) for remote collaborators, an active-section underline in the navigation, a thin reading-progress line, quiet one-time reveals, and hover states on links, rows and cards — all disabled under `prefers-reduced-motion`.
 
-- No build step; plain HTML/CSS/JS. Three.js and GSAP are loaded from CDNs; three.js is lazy-loaded only on devices with WebGL and without Data Saver.
-- 3D: device-pixel-ratio capped, fewer particles + 30 fps cap on phones, heavy panels skipped on phones, rendering paused while the tab is hidden, only nearby objects animate, all GPU resources disposed on theme change, context-loss handled.
-- Fallbacks: no WebGL → animated CSS gradient background; CDN unavailable → IntersectionObserver reveals; JavaScript disabled → all content visible.
-- `prefers-reduced-motion`: no entrance/scroll animations, still 3D frame.
-- Semantic landmarks, one `h1`, ordered headings, skip link, visible focus states, accessible theme toggle and mobile menu (Esc closes, focus management), alt text, AA colour contrast in both themes, ≥ 40 px touch targets.
+## Functionality
+
+- Dark / light theme toggle — saved in `localStorage`, follows the OS until the visitor chooses, applied before first paint (no flash).
+- Mobile menu (Esc closes, focus moves into the menu), project filters (All / Full-stack / AI-ML), copy-email button, CV download, profile-photo slot.
+- No third-party JavaScript and no build step. Works offline / without the font CDN (system fallbacks) and with JavaScript disabled.
+- Semantic landmarks, one `h1`, ordered headings, skip link, visible focus, AA contrast in both themes, ≥ 44 px touch targets.
 - SEO: title, description, canonical, Open Graph + Twitter card (`assets/og-image.png`), JSON-LD `Person`, SVG favicon + Apple touch icon.
 
 ## Project structure
@@ -30,9 +29,8 @@ Production web apps with React, Next.js, NestJS, Express, FastAPI, PostgreSQL an
 ```text
 Portfolio/
 ├── index.html                 # all content and markup
-├── style.css                  # design tokens (dark + light), layout, components
-├── script.js                  # theme, navigation, filters, animations, lazy 3D loader
-├── bg3d.js                    # Three.js scene (ES module)
+├── style.css                  # tokens (dark + light), type & spacing scales, layout, components
+├── script.js                  # theme, navigation, filters, clock, reveals
 ├── favicon.svg
 ├── images.png                 # previous avatar (no longer used on the page)
 ├── assets/
@@ -47,10 +45,10 @@ All paths are relative, so the site works under the GitHub Pages sub-path `/Port
 
 ## Customising
 
-- **Profile photo:** add the image (for example `assets/profile.webp`, portrait ~800×1000) and set `data-photo="assets/profile.webp"` on the `.portrait` element in `index.html`. The MTBC monogram is replaced automatically.
-- **Project screenshots:** each mockup in `index.html` has a comment marking where to swap in an `<img>`; DentalFlow already uses a real screenshot from its repository.
+- **Profile photo:** add the image (for example `assets/profile.webp`, portrait ~800×1000) and set `data-photo="assets/profile.webp"` on the `.hero-photo` element in `index.html`. It appears above the “Now” list; the slot stays hidden until then.
+- **Project screenshots:** each interface illustration in `index.html` has a comment marking where to swap in an `<img>`; DentalFlow already uses a real screenshot from its repository.
 - **CV:** replace `public/Thowfiqur_CV.pdf` (keep the file name).
-- **Colours:** edit the tokens at the top of `style.css`; the 3D scene reads the same variables.
+- **Colours & type:** edit the tokens at the top of `style.css`.
 
 ## Run locally
 
@@ -60,7 +58,7 @@ cd Portfolio
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000>. (Opening `index.html` directly from disk will not load the 3D module, because browsers block ES-module imports from `file://`.)
+Open <http://localhost:8000>.
 
 ## Deploy (GitHub Pages)
 
@@ -68,7 +66,7 @@ The site deploys from the `main` branch root.
 
 ```bash
 git checkout main
-git merge redesign          # or open a pull request from `redesign` and merge it on GitHub
+git merge identity          # or open a pull request from `identity` and merge it on GitHub
 git push origin main
 ```
 
