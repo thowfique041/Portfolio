@@ -1633,10 +1633,8 @@ html.reveal-ready .reveal.is-visible {
 }
 
 /* About */
-.about-grid {
-  display: grid;
-  gap: var(--s-6) var(--s-7);
-  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+.about-text {
+  max-width: 62ch;
 }
 
 .about-text p {
@@ -1648,45 +1646,3 @@ html.reveal-ready .reveal.is-visible {
   margin-top: var(--s-4);
 }
 
-.about-text .placeholder {
-  border: 1px dashed var(--line-strong);
-  border-radius: var(--radius);
-  color: var(--muted);
-  font-size: var(--fs-sm);
-  padding: 10px 12px;
-}
-
-.right-now {
-  align-self: start;
-  border-top: 1px solid var(--line);
-  padding-top: var(--s-4);
-}
-
-.right-now ul {
-  display: grid;
-  gap: var(--s-3);
-}
-
-.right-now li {
-  color: var(--text);
-  font-size: 15px;
-  padding-left: 18px;
-  position: relative;
-}
-
-.right-now li::before {
-  background: var(--accent);
-  border-radius: 50%;
-  content: "";
-  height: 6px;
-  left: 0;
-  position: absolute;
-  top: .62em;
-  width: 6px;
-}
-
-@media (max-width: 900px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-}
