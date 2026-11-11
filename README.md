@@ -11,9 +11,9 @@ Production web apps with React, Next.js, NestJS, Express, FastAPI, PostgreSQL an
 
 An editorial, typography-led identity — no gradients, glow, glassmorphism or decorative 3D.
 
-- **Type:** Instrument Serif for display (name, section titles, project names), Inter for text, JetBrains Mono for labels. One type scale and an 8 px spacing scale throughout.
+- **Type:** Instrument Serif for display (name, section titles, project names), Inter for text, JetBrains Mono for labels, and one Bengali accent (গবেষণা) in Hind Siliguri, loaded as a glyph subset. One type scale and an 8 px spacing scale throughout.
 - **Colour:** dark theme in deep charcoal (`#0E1116`) with soft white text and a single electric-blue accent (`#5B9BFF`) used sparingly; a separately tuned light theme on warm paper (`#F4F1EA`) with deep charcoal text and a muted blue accent (`#2B5797`).
-- **Layout:** asymmetric hero (large serif name, role, headline, and an at-a-glance “Now” list), a 3 / 9 column section grid with hairline rules, numbered case studies, and an index list for further projects.
+- **Layout:** asymmetric hero (large serif name, role, headline, and an at-a-glance “Now” list), a 3 / 9 column section grid with hairline rules, two written-up case studies, and a one-line list for the other projects.
 - **Interaction:** live local time in Sylhet (GMT+6) for remote collaborators, an active-section underline in the navigation, a thin reading-progress line, quiet one-time reveals, and hover states on links, rows and cards — all disabled under `prefers-reduced-motion`.
 
 ## Functionality
@@ -36,7 +36,7 @@ Portfolio/
 ├── assets/
 │   ├── og-image.png           # social preview 1200×630
 │   ├── apple-touch-icon.png
-│   └── projects/              # project screenshots (WebP)
+│   └── screenshots/           # project screenshots (placeholders for now)
 └── public/
     └── Thowfiqur_CV.pdf       # served by every "Download CV" button
 ```
@@ -45,8 +45,9 @@ All paths are relative, so the site works under the GitHub Pages sub-path `/Port
 
 ## Customising
 
-- **Profile photo:** add the image (for example `assets/profile.webp`, portrait ~800×1000) and set `data-photo="assets/profile.webp"` on the `.hero-photo` element in `index.html`. It appears above the “Now” list; the slot stays hidden until then.
-- **Project screenshots:** each interface illustration in `index.html` has a comment marking where to swap in an `<img>`; DentalFlow already uses a real screenshot from its repository.
+- **Profile photo:** add `assets/me.jpg` (portrait, about 800×1000) and set `data-photo="assets/me.jpg"` on the `.hero-photo` element in `index.html`. It appears above the “Now” list; the slot stays hidden until then.
+- **Project screenshots:** replace `assets/screenshots/halkabite.png` and `assets/screenshots/nexusrag.png` (currently labelled placeholders) with real screenshots, then update each image’s `alt` text. Paths are relative on purpose: a leading `/` would break under the `/Portfolio/` sub-path.
+- **TODOs:** search `index.html` for `TODO`. Visible TODO boxes are styled with an orange dashed border so they can’t be missed before deploying.
 - **CV:** replace `public/Thowfiqur_CV.pdf` (keep the file name).
 - **Colours & type:** edit the tokens at the top of `style.css`.
 
