@@ -11,7 +11,7 @@ Production web apps with React, Next.js, NestJS, Express, FastAPI, PostgreSQL an
 
 An editorial, typography-led identity — no gradients, glow, glassmorphism or decorative 3D.
 
-- **Type:** Instrument Serif for display (name, section titles, project names), Inter for text, JetBrains Mono for labels, and one Bengali accent (গবেষণা) in Hind Siliguri, loaded as a glyph subset. One type scale and an 8 px spacing scale throughout.
+- **Type:** Instrument Serif for display (name, section titles, project names), Inter for text, and JetBrains Mono for labels. One type scale and an 8 px spacing scale throughout.
 - **Colour:** dark theme in deep charcoal (`#0E1116`) with soft white text and a single electric-blue accent (`#5B9BFF`) used sparingly; a separately tuned light theme on warm paper (`#F4F1EA`) with deep charcoal text and a muted blue accent (`#2B5797`).
 - **Layout:** asymmetric hero (large serif name, role, headline, and an at-a-glance “Now” list), a 3 / 9 column section grid with hairline rules, two written-up case studies, and a one-line list for the other projects.
 - **Interaction:** live local time in Sylhet (GMT+6) for remote collaborators, an active-section underline in the navigation, a thin reading-progress line, quiet one-time reveals, and hover states on links, rows and cards — all disabled under `prefers-reduced-motion`.

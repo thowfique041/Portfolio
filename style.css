@@ -814,14 +814,6 @@ html.js .hero-foot {
   margin-top: var(--s-4);
 }
 
-/* a single Bengali typographic accent */
-.bn-accent {
-  color: var(--muted);
-  font: 500 clamp(22px, 2vw, 28px)/1.4 "Hind Siliguri", "Noto Sans Bengali", var(--sans);
-  margin-top: var(--s-2);
-  opacity: .8;
-}
-
 /* about */
 .two-col {
   display: grid;
@@ -983,6 +975,7 @@ html.js .hero-foot {
 }
 
 .filter-tab {
+  min-width: 44px;
   border-bottom: 1px solid transparent;
   color: var(--muted);
   font-size: 15px;
