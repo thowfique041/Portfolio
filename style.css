@@ -1651,3 +1651,7 @@ html.reveal-ready .reveal.is-visible {
   margin-top: var(--s-3);
   max-width: 40ch;
 }
+
+.case-body p + p {
+  margin-top: var(--s-3);
+}
