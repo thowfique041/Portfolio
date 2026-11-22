@@ -278,6 +278,78 @@
         </div>
 
         <div class="cases">
+          <!-- ===== Case study: Arkhaven ===== -->
+          <!-- TODO: confirm how to describe Arkhaven (client project, or a concept build for a fictional developer). -->
+          <article class="case reveal" data-category="fullstack">
+            <header class="case-head">
+              <h3>Arkhaven</h3>
+              <p class="case-type">Real-estate website, CRM and customer portal</p>
+            </header>
+            <figure class="case-media">
+              <img class="shot" src="assets/screenshots/arkhaven-1200.webp"
+                srcset="assets/screenshots/arkhaven-800.webp 800w, assets/screenshots/arkhaven-1200.webp 1200w"
+                sizes="(max-width: 900px) 92vw, 680px" width="1200" height="931" loading="lazy" decoding="async"
+                alt="Arkhaven Properties home page: the headline “Homes built with care, handed over with trust.” over a photo of an apartment building, next to an “On site right now” panel listing four projects with construction progress bars.">
+            </figure>
+            <div class="case-body">
+              <p class="case-why">A property developer sells flats years before they are finished. Buyers want to see
+                where their payments went and how far the building has got, and staff need one place to follow up
+                leads.</p>
+              <h4>What I built</h4>
+              <p>One platform with three faces. The public site lists projects with live availability and construction
+                status, and each project page has a gallery, floor plans, a unit table, a map and FAQs, plus inquiry
+                forms for buyers and for landowners offering land for joint development.</p>
+              <p>Staff work in an admin dashboard: a leads CRM with history and follow-ups, customer accounts, flats,
+                payments with verification and PDF receipts, construction progress with site photos, announcements, a
+                content editor, and an activity log.</p>
+              <p>Buyers get a private portal with their unit, payment ledger, receipts, construction stages and photos.
+                Only staff can create those accounts, so there is no public sign-up. The Express API is covered by 26
+                end-to-end tests and runs on Vercel as a serverless function next to the React site.</p>
+              <!-- TODO (Arkhaven): add these three sections when ready, each as <h4>…</h4><p>…</p>
+                   1. A technical challenge: one real problem I hit.
+                   2. How I solved it: what I tried and what finally worked.
+                   3. What I’d do differently: one thing I would change if I started again. -->
+              <p class="stack">Stack: React 19, TypeScript, Vite, Tailwind CSS, TanStack Query, React Hook Form, Zod,
+                Express, MongoDB, Mongoose, JWT, PDFKit, Cloudinary, Vercel</p>
+              <p class="source-note">The source code is private. I can walk you through it on request.</p>
+            </div>
+          </article>
+
+          <!-- ===== Case study: SYLHET ===== -->
+          <article class="case reveal" data-category="fullstack">
+            <header class="case-head">
+              <h3>SYLHET</h3>
+              <p class="case-type">Travel guide to Sylhet, full-stack</p>
+            </header>
+            <figure class="case-media">
+              <img class="shot" src="assets/screenshots/sylhet-travel-1200.webp"
+                srcset="assets/screenshots/sylhet-travel-800.webp 800w, assets/screenshots/sylhet-travel-1200.webp 1200w"
+                sizes="(max-width: 900px) 92vw, 680px" width="1200" height="947" loading="lazy" decoding="async"
+                alt="SYLHET travel guide home page: a full-screen photo of misty hills and tea bushes in Jaflong, with the place name in large type, a short description of the Piyain river, an Explore Jaflong button, and slide controls showing 01 of 05.">
+            </figure>
+            <div class="case-body">
+              <p class="case-why">A travel guide to Sylhet division: Jaflong, Ratargul, Sreemangal, Bisanakandi, Lalakhal,
+                Madhabkunda, Tanguar and Hakaluki haors, and the SUST campus.</p>
+              <!-- TODO (SYLHET): optional, one sentence on why you built it, in your own words. -->
+              <h4>What I built</h4>
+              <p>A travel guide where the homepage slider sets the mood for the whole site. Each destination wipes in
+                from the side it is travelling from, and the site’s colors shift to that place’s palette through a theme
+                engine built on CSS <code>@property</code>. Admins can change slides, photos, text, and theme colors from
+                the dashboard.</p>
+              <p>Behind it: search with category, activity and month filters, a map view, destination pages with costs,
+                stays, food and moderated reviews, favorites that survive signing in, and a trip planner that ranks
+                places for your month, budget and group and builds a day-by-day itinerary. With no database connected,
+                the API falls back to read-only mode and serves the bundled content, so the public site still works.</p>
+              <!-- TODO (SYLHET): add these three sections when ready, each as <h4>…</h4><p>…</p>
+                   1. A technical challenge: one real problem I hit.
+                   2. How I solved it: what I tried and what finally worked.
+                   3. What I’d do differently: one thing I would change if I started again. -->
+              <p class="stack">Stack: React, TypeScript, Vite, Tailwind CSS, Framer Motion, GSAP, React Leaflet, Express 5,
+                MongoDB, Mongoose, JWT, Zod, Cloudinary, Vercel</p>
+              <p class="source-note">The source code is private. I can walk you through it on request.</p>
+            </div>
+          </article>
+
           <!-- ===== Case study: HalkaBite ===== -->
           <article class="case reveal" data-category="fullstack">
             <header class="case-head">
