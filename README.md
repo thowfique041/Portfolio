@@ -1,7 +1,7 @@
 # Thowfiqur Bari Chowdhury — Portfolio
 
-Personal portfolio of **Thowfiqur Bari Chowdhury (MTBC)** — Full-Stack Developer | AI/ML Engineer.
-Production web apps with React, Next.js, NestJS, Express, FastAPI, PostgreSQL and MongoDB, plus RAG, agentic AI and machine-learning work.
+Personal portfolio of **Thowfiqur Bari Chowdhury (MTBC)**, full-stack developer.
+Production web apps with React, Next.js, NestJS, Express, FastAPI, PostgreSQL and MongoDB.
 
 **Live:** [thowfique041.github.io/Portfolio](https://thowfique041.github.io/Portfolio/) · hosted on GitHub Pages
 
@@ -19,7 +19,7 @@ An editorial, typography-led identity — no gradients, glow, glassmorphism or d
 ## Functionality
 
 - Dark / light theme toggle — saved in `localStorage`, follows the OS until the visitor chooses, applied before first paint (no flash).
-- Mobile menu (Esc closes, focus moves into the menu), project filters (All / Full-stack / AI-ML), copy-email button, CV download, profile-photo slot.
+- Mobile menu (Esc closes, focus moves into the menu), copy-email button, CV download, profile-photo slot.
 - No third-party JavaScript and no build step. Works offline / without the font CDN (system fallbacks) and with JavaScript disabled.
 - Semantic landmarks, one `h1`, ordered headings, skip link, visible focus, AA contrast in both themes, ≥ 44 px touch targets.
 - SEO: title, description, canonical, Open Graph + Twitter card (`assets/og-image.png`), JSON-LD `Person`, SVG favicon + Apple touch icon.
@@ -78,7 +78,6 @@ Then check **Settings → Pages**: *Source: Deploy from a branch*, *Branch: `mai
 - Email: [thowfiqurbarrychowdhury@gmail.com](mailto:thowfiqurbarrychowdhury@gmail.com)
 - GitHub: [github.com/thowfique041](https://github.com/thowfique041)
 - LinkedIn: [thowfiqur-bary-chowdhury](https://www.linkedin.com/in/thowfiqur-bary-chowdhury-06b75b339/)
-- Kaggle: [kaggle.com/thowfiq041](https://www.kaggle.com/thowfiq041)
 
 ## License
 
