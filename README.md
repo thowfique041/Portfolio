@@ -77,7 +77,7 @@ Then check **Settings → Pages**: *Source: Deploy from a branch*, *Branch: `mai
 
 - Email: [thowfiqurbarrychowdhury@gmail.com](mailto:thowfiqurbarrychowdhury@gmail.com)
 - GitHub: [github.com/thowfique041](https://github.com/thowfique041)
-- LinkedIn: [thowfiqur-bary-chowdhury](https://www.linkedin.com/in/thowfiqur-bary-chowdhury-06b75b339/)
+- LinkedIn: [thowfiqur-bari-chowdhury](https://www.linkedin.com/in/thowfiqur-bari-chowdhury-06b75b339/)
 
 ## License
 
